@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboard"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:checked="true"
+        android:iconTint="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/kiblat"
+        android:icon="@drawable/ic_explore_24px"
+        android:title="Kiblat"
+        android:iconTint="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/grafik"
+        android:icon="@drawable/ic_bar"
+        android:title="Statistik"
+        android:iconTint="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/ic_person"
+        android:title="News"
+        android:iconTint="@color/colorPrimary"/>
+</menu>

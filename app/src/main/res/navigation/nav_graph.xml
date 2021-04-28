@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="kupluk.smk.coding.fragment.DashboardFragment"
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_ayatFragment"
+            app:destination="@id/ayatFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_kiblatFragment"
+            app:destination="@id/kiblatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayatFragment"
+        android:name="kupluk.smk.coding.fragment.StatistikFragment"
+        android:label="fragment_ayat"
+        tools:layout="@layout/fragment_statistik" >
+        <action
+            android:id="@+id/action_ayatFragment_to_kiblatFragment"
+            app:destination="@id/kiblatFragment" />
+        <action
+            android:id="@+id/action_ayatFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kiblatFragment"
+        android:name="kupluk.smk.coding.fragment.KiblatFragment"
+        android:label="fragment_kiblat"
+        tools:layout="@layout/fragment_kiblat" >
+        <action
+            android:id="@+id/action_kiblatFragment_to_ayatFragment"
+            app:destination="@id/ayatFragment" />
+        <action
+            android:id="@+id/action_kiblatFragment_self"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+</navigation>
